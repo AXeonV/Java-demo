@@ -109,4 +109,13 @@ public class Car {
 	public void setExitTime(String time) {
 		this.exitTime = time;
 	}
+
+	public static void main(String[] args) {
+		Car car = new Car("TA00001", "Standard");
+		car.setEntryDay("1919-8-11");
+		car.setEntryTime("1.5");
+		car.setExitDay("2077-11-10");
+		car.setExitTime("21.5");
+		System.out.println(car.getFee());
+	}
 }
