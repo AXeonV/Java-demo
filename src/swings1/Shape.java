@@ -2,7 +2,7 @@ package swings1;
 
 import java.awt.*;
 
-public class Shape {
+public abstract class Shape {
     protected Color color;
     protected int x;
     protected int y;
@@ -17,27 +17,15 @@ public class Shape {
         this.y = y;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
     // Base method for drawing
-    public void draw(Graphics2D g2d) {
-        g2d.setColor(color);
-        // Default shape is a square
-        g2d.fillRect(x, y, 50, 50);
-    }
+    public abstract void draw(Graphics2D g2d);
 
     // Base method for getting shape name
-    public String getShapeName() {
-        return "Shape";
-    }
+    public abstract String getShapeName();
 
     public boolean checkdot(int x, int y) {
         return (x >= 0 && x <= 400 && y >= 0 && y <= 400);
     }
 
-    public void checkPosition() {
-
-    }
+    public abstract void checkPosition();
 }

@@ -1,10 +1,10 @@
-package swings1;
+package swing2;
 
 import javax.swing.*;
 
 public class ShapesDemo extends JFrame {
     public ShapesDemo() {
-        setTitle("Shapes Inheritance Demo");
+        setTitle("Shapes Polymorphism Demo");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         add(new DrawingPanel());
