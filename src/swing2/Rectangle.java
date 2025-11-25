@@ -46,10 +46,7 @@ public class Rectangle extends Shape {
         if (width == height) {
             this.width += 20;
             this.height += 20;
-        } else {
-          System.out.println("!");
-          setPosition(0, this.y);
-        }
+        } else setPosition(0, this.y);
     }
     public void reset(){
         if (width == height) {
